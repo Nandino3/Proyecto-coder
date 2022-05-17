@@ -1,0 +1,131 @@
+header {
+    background-color: #3F586B;
+    width: 100%;
+}
+
+.logo {
+    margin: 15px;
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #F6B135;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.menu li a:hover {
+    color: antiquewhite;
+}
+
+footer {
+    background-color: #3F586B;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    margin-top: 40px;
+}
+
+.footerbar {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.footerbar li a {
+    text-decoration: none;
+    color: #F6B135;
+    font-weight: lighter;
+}
+
+.footerbar li a :hover {
+    color: antiquewhite;
+    transform: scale(2);
+}
+
+i {
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    }
+.card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0,25s;
+    background-color: #3F586B;
+}
+.container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba (0, 0, 0, 0.2);
+}
+.container .card img {
+    width: 330px;
+    height: 220px;
+
+}
+.container .card h2 {
+    font-weight: 600;
+    color: #F6B135;
+}
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    color: antiquewhite;
+}
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #F6B135;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0px;
+}
+.bajonavbar {
+    background-color: #F6B135;
+    width: 100%;
+    color: #3F586B;
+    padding: 10px;
+    text-align: center;
+}
