@@ -1,3 +1,12 @@
+.navbar {
+    background-color: #3F586B;
+}
+.nav-item {
+    padding: 15px;
+}
+.nav-link {
+    color: #F6B135;
+}
 .altonavbar {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -10,55 +19,11 @@
     font-size: small;
 }
 
-header {
-    background-color: #3F586B;
-    width: 100%;
-    flex-shrink: 0;
-}
-
-.logo {
-    margin: 15px;
-}
-
-.navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-li {
-    list-style: none;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: #F6B135;
-}
-
-.menu {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    font-size: 15px;
-    align-items: center;
-}
-
-.menu li {
-    padding: 5px 14px;
-}
-
-.menu li a:hover {
-    color: antiquewhite;
-}
-
 footer {
     background-color: #3F586B;
     width: 100%;
     flex-shrink: 0;
 }
-
 .footerbar {
     padding: 30px;
     display: flex;
@@ -68,7 +33,6 @@ footer {
     justify-content: center;
     height: 300px;
 }
-
 .footerbar li a {
     text-decoration: none;
     color: #F6B135;
@@ -79,17 +43,16 @@ footer {
     color: antiquewhite;
     transform: scale(2);
 }
-
 i {
     margin: 5px;
 }
 
-.container {
+.container-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     max-width: 1200px;
-    justify-content: center;
+    justify-items: center;
     margin: auto;
 }
 
@@ -112,7 +75,7 @@ i {
     background-color: #3F586B;
 }
 
-.container .card:hover {
+.container-cards .card:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba (0, 0, 0, 0.2);
 }
@@ -155,6 +118,12 @@ body {
     padding: 10px;
     text-align: center;
 }
+.bajonavbar2 {
+    background-color: antiquewhite;
+    color: #3F586B;
+    padding: 50px;
+    text-align: center;
+}
 
 .card-consorcios {
     display: flex;
@@ -180,8 +149,8 @@ body {
     }
 }
 @media screen and (max-width:768px) {
-    .container {
-        grid-template-columns: 1fr;
+    .container-cards {
+        grid-template-columns: 1fr 1fr;
     }
 
     .navbar {
@@ -199,7 +168,7 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    .container {
+    .container-cards {
         grid-template-columns: 1fr;
     }
 
@@ -218,4 +187,13 @@ body {
         justify-items: center;
     }
 
+}
+.card-title {
+    color: #F6B135;
+}
+.card-text {
+    color:antiquewhite;
+} 
+.btn {
+    background-color: #F6B135;
 }

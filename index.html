@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmobiliaria Base S.R.L</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--link css-->
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -13,6 +15,7 @@
 </head>
 <body>
     <header>
+        <!--Alto navbar-->
         <section>
             <div class="altonavbar">
                 <div>Corrientes 2685</div>
@@ -21,82 +24,104 @@
                 <div>Lun. a Vier. de 09 a 17hs</div>
             </div>
         </section>
-        <nav class="navbar">
-            <img class="logo" src="./assets/logo definitivo.png" width="150px" alt="">
-            <ul>
-                <div class="menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="./html/Ventas.html">Ventas</a></li>
-                    <li><a href="./html/Alquileres.html">Alquileres</a></li>
-                    <li><a href="./html/Consorcios.html">Consorcios</a></li>
-                    <li><a href="./html/Contacto.html">Contacto </a></li>
+        <!---Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/logo definitivo.png" alt="" width="150px" height="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav navbar-nav-scroll ms-auto" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/Ventas.html">Ventas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/Alquileres.html">Alquileres</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/Consorcios.html">Consorcios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    </header>
+    <!-- Carrusel de imagenes-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/CARRUSEL_Mesa de trabajo 1-01.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/CARRUSEL_Mesa de trabajo 1-02.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--Parrafo de trayectoria-->
+    <div class="bajonavbar2">
+      <p style="text-align: center; line-height: 1.5;">
+        <span style="font-size: 18px; color: #3F586B;">Somos un equipo de profesionales, comprometidos en ofrecer un servicio de excelencia.</span>
+      </p>
+      <p style="text-align: center; line-height: 1.5;"><span style="font-weight: bold; color: #3F586B;"><span style="font-size: 18px;">Acompañamos a nuestros clientes en todas las instancias de sus operaciones inmobiliarias, superándonos continuamente</span>
+      </p>
+    </div>
+    <!--Propiedades destacadas-->
+    <section>
+        <div class="bajonavbar">
+           <h2>Propiedades destacadas</h2> 
+        </div>
+    </section>    
+    <!---Primeras cards-->
+    <div class="container-cards">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/departamento2.jpg" class="card-img-top" alt="..." height="50%">
+                <div class="card-body">
+                <h5 class="card-title">Departamento en Venta</h5>
+                <p class="card-text">Amplia casa de 4 dormitorios a estrenar</p>
+                <a href="#" class="btn btn-light">Ver más</a>
                 </div>
-            </ul>
-        </nav>
-    </header>    
-    <div class="container">
-            <div class="card">
-                <img src="./assets/casa1.jpg" alt="">
-                <h2>Casa en Venta</h2>
-                <p>Descripcion del producto</p>
-                <a>Ver mas</a>
             </div>
-            <div class="card">
-                <img src="./assets/casa2.jpg" alt="">
-                <h2>Casa en Venta</h2>
-                <p>Descripcion del producto</p>
-                <a>Ver mas</a>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/departamento1.jpg" class="card-img-top" alt="..." height="50%">
+                <div class="card-body">
+                <h5 class="card-title">Departamento en Venta</h5>
+                <p class="card-text">Amplia casa de 4 dormitorios a estrenar</p>
+                <a href="#" class="btn btn-light">Ver más</a>
+                </div>
             </div>
-            <div class="card">
-                <img src="./assets/casa3.jpg" alt="">
-                <h2>Casa en Venta</h2>
-                <p>Descripcion del producto</p>
-                <a>Ver mas</a>
-            </div>
-            <div class="card">
-                <img src="./assets/casa3.jpg" alt="">
-                <h2>Casa en Venta</h2>
-                <p>Descripcion del producto</p>
-                <a>Ver mas</a>
-            </div>
-            <div class="card">
-                <img src="./assets/casa3.jpg" alt="">
-                <h2>Casa en Venta</h2>
-                <p>Descripcion del producto</p>
-                <a>Ver mas</a>
-            </div>
-            <div class="card">
-                <img src="./assets/casa3.jpg" alt="">
-                <h2>Casa en Venta</h2>
-                <p>Descripcion del producto</p>
-                <a>Ver mas</a>
-            </div>
-            <div class="card">
-                <img src="./assets/casa1.jpg" alt="">
-                <h2>Casa en Alquiler</h2>
-                <p>Descripcion del producto</p>
-                <a>Ver mas</a>
-            </div>
-            <div class="card">
-                <img src="./assets/casa2.jpg" alt="">
-                <h2>Casa en Alquiler</h2>
-                <p>Descripcion del producto</p>
-                <a>Ver mas</a>
-            </div>
-            <div class="card">
-                <img src="./assets/casa3.jpg" alt="">
-                <h2>Casa en Alquiler</h2>
-                <p>Descripcion del producto</p>
-                <a>Ver mas</a>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/carrusel1.jpg" class="card-img-top" alt="..." height="50%">
+                <div class="card-body">
+                <h5 class="card-title">Departamento en Venta</h5>
+                <p class="card-text">Amplia casa de 4 dormitorios a estrenar</p>
+                <a href="#" class="btn btn-light">Ver más</a>
+                </div>
             </div>
         </div>
     <footer>
         <nav class="footerbar">
-            <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-            <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
-            <li><a href=""><i class="fa-brands fa-twitter"></i>Twitter</a></li>
-            <li><a href=""><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>          
+            <li style="list-style-type: none;"><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+            <li style="list-style-type: none;"><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+            <li style="list-style-type: none;"><a href=""><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+            <li style="list-style-type: none;"><a href=""><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>          
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
